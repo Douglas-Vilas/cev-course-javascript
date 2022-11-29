@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom 09 - Getting Started with DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting studies with DOM</h1>
+    <p>Here goes the result</p>
+    <p>Learning to use <strong>Dom</strong> in JavaScript</p>
+    <div id="msg">Click me</div>
+    <script>
+        var bod = document.body
+        var parag1 = document.getElementsByTagName('p')[1]
+        /*var dv = document.getElementById('msg')
+        document.writeln(`It's written like this: ${parag1.innerText}`)
+        bod.style.background = 'black'
+        parag1.style.color = 'blue'
+        document.writeln(parag1.innerHTML)*/
+        
+        /*dv.style.background = 'green'
+        dv.innerText = "I'm waiting..."*/
+
+       /*var dv = document.getElementsByName('msg')[0]
+        dv.innerText = 'Hello!'*/
+
+    var dv = document.querySelector('div#msg')//If it's a class, use "div.msg"
+        dv.style.background = 'blue'
+
+        
+                
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom 10 - Adding Numbers</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adding Values</h1>
+    <input type="number" class="txtn1" id="txtn1"> +
+    <input type="number" class="txtn2" id="txtn2">
+    <input type="button" value="AddUp" onclick="addUp()">
+    <div id="res">Result</div>
+    <script>
+        function addUp() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.querySelector('input#txtn2') 
+            var res = document.querySelector('div#res')
+            var num1 = Number(tn1.value)
+            var num2 = Number(tn2.value)
+            var sum = num1 + num2
+            res.innerHTML = `The sum of ${num1} and ${num2} is equal to <strong>${sum}<strong/>`
+        }
+    </script>
+    
+</body>
+</html>

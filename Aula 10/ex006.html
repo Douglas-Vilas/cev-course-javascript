@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom 10 - DOM Events</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interact...
+    </div>
+
+    <script>
+        var zone = document.querySelector('div#area')
+        zone.addEventListener('click', clicked)
+        zone.addEventListener('mouseenter', enter)
+        zone.addEventListener('mouseout', leave)
+
+        function clicked() {
+            zone.innerText = 'Clicked'
+            zone.style.background = 'red'
+
+        }
+        function enter() {
+            zone.innerText = 'Came in!'
+        }
+        function leave() {
+            zone.innerText = 'Get out!'
+            zone.style.background = 'green'
+        }
+    </script>
+
+</body>
+</html>
