@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 009</title>
+</head>
+<body>
+    <h1>Travel Inquiry</h1>
+    Do you living in: <input type="text" name="txtliv" id="txtliv">
+    <input type="button" value="Check" onclick="checking()">
+    <div id="res">
+
+    </div>
+    <script>
+        function checking() {
+            var  txtli = document.querySelector(`input#txtliv`)
+            var res = document.querySelect(`div#res`)
+            res.innerHTML = `` //Stop here 25:16
+        }
+    </script>
+</body>
+</html>
