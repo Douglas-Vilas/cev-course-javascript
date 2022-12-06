@@ -15,9 +15,14 @@
     </div>
     <script>
         function checking() {
-            var  txtli = document.querySelector(`input#txtliv`)
-            var res = document.querySelect(`div#res`)
-            res.innerHTML = `` //Stop here 25:16
+            var  country = document.querySelector(`input#txtliv`)
+            var res = document.querySelector(`div#res`)
+            res.innerHTML = `<p>You're</p>` 
+            if (country == `Brazil`) {
+                res.innerHTML = `You're <strong>Brazilian</strong>!`
+            } else {
+                res.innerHTML = `You're <strong>Abroad</strong>!`
+            }
         }
     </script>
 </body>
