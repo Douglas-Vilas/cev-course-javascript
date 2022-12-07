@@ -19,9 +19,9 @@
             var res = document.querySelector(`div#res`)
             res.innerHTML = `<p>You're</p>` 
             if (country == `Brazil`) {
-                res.innerHTML = `You're <strong>Brazilian</strong>!`
-            } else {
-                res.innerHTML = `You're <strong>Abroad</strong>!`
+                res.innerHTML += `<p>You're <strong>Brazilian</strong>!</p>`
+            }else {
+                res.innerHTML += `<p>You're <strong>Abroad</strong>!</p>`
             }
         }
     </script>
