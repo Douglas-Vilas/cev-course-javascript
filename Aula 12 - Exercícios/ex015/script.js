@@ -1,9 +1,9 @@
-function check() {
+function checking() {
     var date = new Date()
     var year = date.getFullYear()
     var fyear = document.querySelector('input#txtYear')
     var res = document.querySelector('div#res')
-    if (fyear.value.length == 0 || Number(fyear.value) > year) {
+    if (fyear.value.length == 0 || fyear.value > year) {
         alert('[ERROR] Check the data and try again!')
     } else {
         var fsex = document.getElementsByName('radsex')
