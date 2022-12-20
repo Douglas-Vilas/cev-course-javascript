@@ -1,7 +1,7 @@
 function checking() {
     var date = new Date()
     var year = date.getFullYear()
-    var fyear = document.querySelector('input#txtYear')
+    var fyear = document.querySelector('input#txtyear')
     var res = document.querySelector('div#res')
     if (fyear.value.length == 0 || fyear.value > year) {
         alert('[ERROR] Check the data and try again!')
