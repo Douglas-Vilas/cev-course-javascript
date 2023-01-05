@@ -15,4 +15,4 @@ function multiplicationTable() {
             c++
         }
     }
-}//Problema na execução. Verificar. Não aparece a tabuada
+}
